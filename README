@@ -1,0 +1,48 @@
+# SWYNEX – Network Security Analysis
+
+## Overview
+This project presents a defensive network security analysis performed using Wireshark in a controlled network environment.
+
+## Objective
+The objective of this project is to identify network protocols, analyze traffic patterns, detect potential network anomalies, and understand possible security concerns.
+
+## Tools Used
+- Wireshark 4.6.9
+- Windows
+- Controlled personal/lab network
+
+## Protocols Analyzed
+- DNS
+- TCP
+- UDP
+- QUIC
+- TLS 1.2 / TLS 1.3
+
+## Network Analysis Findings
+During the analysis, DNS, TCP, UDP, QUIC and TLS traffic were observed.
+
+TCP Duplicate ACKs and TCP Fast Retransmissions were also identified. These can occur because of packet loss, network congestion, delayed packets, or temporary network instability.
+
+These observations alone do not confirm malicious activity.
+
+## Security Considerations
+Encrypted protocols such as TLS and QUIC protect the confidentiality of network communication. However, encrypted traffic can make content inspection more difficult.
+
+Repeated retransmissions and duplicate acknowledgements should be monitored because they may indicate network reliability problems or unusual traffic behavior.
+
+## Defensive Recommendations
+- Monitor repeated TCP retransmissions and Duplicate ACKs.
+- Use secure protocols such as TLS.
+- Keep network monitoring tools updated.
+- Investigate unusual traffic patterns carefully.
+- Perform security testing only on authorized systems.
+
+## Conclusion
+The analysis demonstrated how Wireshark can be used as a defensive network security tool to identify protocols and investigate potentially abnormal network behavior.
+
+No clear evidence of malicious activity was established from this limited capture.
+
+## Project Report
+The complete analysis report is available in the repository as:
+
+`SWYNEX_Network_Security_Analysis_Report.pdf`
